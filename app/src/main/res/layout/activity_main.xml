@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:gravity="center">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="20dp">
+
+            <EditText
+                android:id="@+id/keyOneMessage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:hint="Введите ключ первой записи" />
+
+            <EditText
+                android:id="@+id/valueOneMessage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:hint="Введите значение первой записи" />
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp">
+
+            <EditText
+                android:id="@+id/keyTwoMessage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:hint="Введите ключ второй записи" />
+
+            <EditText
+                android:id="@+id/valueTwoMessage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:hint="Введите значение второй записи" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingTop="20dp">
+
+            <EditText
+                android:id="@+id/keyThreeMessage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:hint="Введите ключ третьей записи" />
+
+            <EditText
+                android:id="@+id/valueThreeMessage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:hint="Введите значение третьей записи" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/sendMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FA9A"
+            android:text="Отправить"
+            android:onClick="sendMessage"
+            android:layout_marginTop="40dp"/>
+        <Button
+            android:id="@+id/write_external"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#7B68EE"
+            android:text="Записать во внешнее"
+            android:onClick="writeExternal"
+            android:layout_marginTop="20dp"/>
+        <Button
+            android:id="@+id/write_internal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#4169E1"
+            android:text="Записать во внутреннее"
+            android:onClick="writeInternal"
+            android:layout_marginTop="20dp"/>
+        <Button
+            android:id="@+id/delete_internal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#B22222"
+            android:text="Удалить файл из внутреннего"
+            android:onClick="deleteInternal"
+            android:layout_marginTop="20dp"/>
+        <Button
+            android:id="@+id/write_bd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#D2691E	"
+            android:text="Записать в базу данных"
+            android:onClick="writeBd"
+            android:layout_marginTop="20dp"/>
+
+
+    </LinearLayout>
+</ScrollView>
